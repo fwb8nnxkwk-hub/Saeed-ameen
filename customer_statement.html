@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>كشف حساب زبون</title>
+<link rel="manifest" href="./manifest.json"><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<header><h1>كشف حساب زبون</h1><a href="./index.html" class="back">العودة</a></header>
+<main class="container">
+  <div class="panel">
+    <label>اختر العميل: <select id="selectCustomer"><option value="">-- اختر --</option></select></label>
+    <button id="loadStatement">عرض الكشف</button>
+    <button id="exportStatementPDF">تصدير PDF</button>
+  </div>
+  <div class="panel"><h3>كشف الحساب</h3><div id="statementArea"></div></div>
+</main>
+<script src="./app_professional.js"></script>
+</body></html>

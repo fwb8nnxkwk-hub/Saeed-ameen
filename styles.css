@@ -1,0 +1,22 @@
+
+/* Arabic-only, nice font stack (user system + Tajawal fallback) */
+:root{--accent:#0b61a4;--bg:#f5f7fb;--card:#fff}
+*{box-sizing:border-box;font-family: 'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans Arabic', sans-serif}
+html,body{height:100%;margin:0;background:var(--bg);color:#111}
+header.top{background:var(--accent);color:#fff;padding:12px;display:flex;justify-content:space-between;align-items:center}
+header .main-nav a{color:#fff;text-decoration:none;margin-left:12px;font-weight:600}
+.container{padding:16px;max-width:1100px;margin:0 auto}
+.panel{background:var(--card);padding:12px;border-radius:8px;margin-bottom:12px;box-shadow:0 1px 6px rgba(0,0,0,0.04)}
+.panel-head{display:flex;justify-content:space-between;align-items:center}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse}
+table th, table td{padding:8px;border-bottom:1px solid #eee;text-align:center}
+button{background:var(--accent);color:#fff;border:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center}
+.modal.hidden{display:none}
+.modal-box{background:#fff;padding:12px;border-radius:8px;min-width:300px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#fff;padding:12px;border-radius:8px;text-align:center}
+.back{color:var(--accent);text-decoration:none;font-weight:600;margin-left:12px}
+.footer{padding:12px;text-align:center;color:#666}
+@media (max-width:900px){ header.top{flex-direction:column;gap:8px} .grid{grid-template-columns:repeat(1,1fr)} }

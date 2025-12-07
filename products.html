@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>المخزن</title>
+<link rel="manifest" href="./manifest.json"><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<header><h1>المخزن</h1><a href="./index.html" class="back">العودة</a></header>
+<main class="container">
+  <div class="panel">
+    <div class="panel-head"><h3>قائمة المنتجات</h3><button id="addProduct">إضافة منتج</button></div>
+    <input id="searchProd" placeholder="بحث عن منتج...">
+    <div class="table-wrap"><table id="productsTable"><thead><tr><th>الاسم</th><th>تكلفة</th><th>سعر</th><th>كمية</th><th>إجراءات</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="panel">
+    <h3>استيراد / تصدير</h3>
+    <input type="file" id="importProducts"><button id="doImportProducts">استيراد منتجات</button>
+    <button id="exportProducts">تصدير منتجات CSV</button>
+  </div>
+</main>
+<div id="modal" class="modal hidden"><div class="modal-box"><h3 id="modalTitle"></h3><div id="modalBody"></div><div class="modal-actions"><button id="modalCancel">إلغاء</button><button id="modalSave">حفظ</button></div></div></div>
+<script src="./app_professional.js"></script>
+</body></html>
